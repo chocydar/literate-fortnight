@@ -1,0 +1,42 @@
+{
+  "name": "chocy",
+  "author": "chocydar",
+  "homepage": ".",
+  "license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deploy": "gh-pages -b gh-pages -d out",
+    "predeploy": "yarn export",
+    "clean": "rm -rf .next out",
+    "dev": "next dev --turbo",
+    "build": "yarn clean && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^0.0.55",
+    "@ai-sdk/openai": "^0.0.72",
+    "@assistant-ui/react": "^0.7.0",
+    "@assistant-ui/react-markdown": "^0.7.0",
+    "next": "15.0.3",
+    "ollama-ai-provider": "^0.16.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.0.3",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.48",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  }
+}
